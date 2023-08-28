@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Startup Success Predictor</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Startup Success Predictor</h1>
+            <form id="prediction-form">
+                <label for="startup-name">Startup Name:</label>
+                <input type="text" id="startup-name" required>
+                
+                <label for="industry">Industry:</label>
+                <select id="industry" required>
+                    <option value="tech">Tech</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="finance">Finance</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+                <!-- Add more input fields for other factors -->
+                <!-- ...other input fields... -->
+
+<label for="funding-amount">Funding Amount ($):</label>
+<input type="number" id="funding-amount" required>
+
+<label for="founders">Number of Founders:</label>
+<input type="number" id="founders" required>
+
+<label for="market-research">Market Research (1-10):</label>
+<input type="number" id="market-research" min="1" max="10" required>
+
+<label for="usp">Unique Selling Proposition:</label>
+<textarea id="usp" rows="4"></textarea>
+
+<label for="customers">Number of Customers:</label>
+<input type="number" id="customers" required>
+
+<button type="button" id="predict-button">Predict</button>
+
+                
+                <button type="button" id="predict-button">Predict</button>
+            </form>
+            <div id="prediction-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
